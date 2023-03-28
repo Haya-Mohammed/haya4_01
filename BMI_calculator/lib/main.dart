@@ -1,5 +1,10 @@
-import 'package:bmi_calculator/home_page.dart';
-import 'package:bmi_calculator/result_page.dart';
+import 'package:bmi_calculator/modules/home/home_screen.dart';
+import 'package:bmi_calculator/modules/bmi_result/bmi_result_screen.dart';
+import 'package:bmi_calculator/modules/bmi/bmi_screen.dart';
+import 'package:bmi_calculator/modules/counter/counter_screen.dart';
+import 'package:bmi_calculator/modules/home/home_screen.dart';
+import 'package:bmi_calculator/modules/login/login_screen.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,9 +20,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
-      home: MyHomePage(),
+      home: HomeScreen(),
     );
   }
 }
