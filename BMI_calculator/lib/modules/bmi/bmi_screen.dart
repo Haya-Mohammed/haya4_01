@@ -1,17 +1,15 @@
-import 'dart:ffi';
 import 'dart:math';
-
-import 'package:bmi_calculator/result_page.dart';
+import 'package:bmi_calculator/modules/bmi_result/bmi_result_screen.dart';
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+class BmiScreen extends StatefulWidget {
+  const BmiScreen({Key? key}) : super(key: key);
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<BmiScreen> createState() => _BmiScreenState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _BmiScreenState extends State<BmiScreen> {
   double height = 120.0;
   int weight = 60;
   int age = 20;
